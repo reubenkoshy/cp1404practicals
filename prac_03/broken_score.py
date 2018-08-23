@@ -3,9 +3,13 @@ CP1404/CP5632 - Practical
 Broken program to determine score status
 """
 
+
 # TODO: Fix this!
 
-score = float(input("Enter score: "))
+
+def main():
+    score = float(input("Enter score: "))
+    print(check_score(score))
 
 
 def check_score(value):
@@ -20,4 +24,4 @@ def check_score(value):
     return message
 
 
-print(check_score(score))
+main()
