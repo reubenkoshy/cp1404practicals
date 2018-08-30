@@ -4,8 +4,8 @@ import random
 def main():
 
     numbers_per_line = 6
-    minimum = 1
-    maximum = 45
+    min_number = 1
+    max_number = 45
 
     number_picks = int(input("How many quick picks? "))
     while number_picks < 0:
@@ -15,9 +15,9 @@ def main():
     for i in range(number_picks):
         quick_pick = []
         for j in range(numbers_per_line):
-            number = random.randint(minimum, maximum)
+            number = random.randint(min_number, max_number)
             while number in quick_pick:
-                number = random.randint(minimum, maximum)
+                number = random.randint(min_number, max_number)
             quick_pick.append(number)
         quick_pick.sort()
 
