@@ -37,7 +37,7 @@ for i, number in enumerate(numbers):
 numbers = [0, 50, 100]
 
 for i in range(len(numbers)):
-    print("{0:>5}".format( numbers[i]))
+    print("{0:>5}".format(numbers[i]))
 
 for i, number in enumerate(numbers):
     print("{0:>5}".format(number))
